@@ -1,0 +1,185 @@
+.page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #111827;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.headerInner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: #111827;
+}
+
+.nav {
+  display: flex;
+  gap: 14px;
+}
+
+.nav a {
+  color: #111827;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.nav a:hover {
+  background: #f3f4f6;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 28px 18px 64px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+.article {
+  background: #ffffff;
+}
+
+.h1 {
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 6px 0 6px;
+  letter-spacing: -0.03em;
+}
+
+.sub {
+  margin: 0 0 18px;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.section {
+  padding-top: 18px;
+  border-top: 1px solid #eef2f7;
+  margin-top: 18px;
+}
+
+.h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+
+.ul {
+  padding-left: 18px;
+  margin: 10px 0 0;
+}
+
+.ul li {
+  margin: 8px 0;
+}
+
+.callout {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.link {
+  color: #111827;
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 36px;
+  padding-top: 16px;
+  border-top: 1px solid #eef2f7;
+}
+
+/* TOC */
+.tocMobile {
+  margin: 16px 0 6px;
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.tocSummary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tocList {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.tocList li {
+  margin: 8px 0;
+}
+
+.tocList a {
+  color: #111827;
+  text-decoration: none;
+}
+
+.tocList a:hover {
+  text-decoration: underline;
+}
+
+/* Desktop sidebar */
+.aside {
+  display: none;
+}
+
+.tocCard {
+  position: sticky;
+  top: 88px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 14px 14px;
+  background: #ffffff;
+}
+
+.tocTitle {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 28px;
+  }
+
+  .aside {
+    display: block;
+  }
+
+  .tocMobile {
+    display: none;
+  }
+}
